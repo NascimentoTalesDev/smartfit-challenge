@@ -1,0 +1,6 @@
+to create a new project
+ng new PROJECT_NAME
+
+
+to create a header component
+ng g c components/header

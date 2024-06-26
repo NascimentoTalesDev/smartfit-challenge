@@ -1,4 +1,5 @@
 :root{
+    --dark: #000000;
     --dark-grey: #333333;
     --light-grey: #808080;
     --yellow: #FFB612;
@@ -6,30 +7,43 @@
     --green: #2FC022;
 
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham";
+}
+
+body{
+    min-height:  120vh;
+    width: 100vw;
+}
+
 @font-face {
     font-family: "Gotham";
-    src: url("./app/assets/fonts/gotham/gotham-light.woff2");
+    src: url("/fonts/gotham/gotham-light.woff2");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gotham";
-    src: url("./app/assets/fonts/gotham/gotham-book.woff2");
+    src: url("/fonts/gotham/gotham-book.woff2");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gotham";
-    src: url("./app/assets/fonts/gotham/gotham-bold.woff2");
+    src: url("/fonts/gotham/gotham-bold.woff2");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gotham";
-    src: url("./app/assets/fonts/gotham/gotham-bold.woff2");
+    src: url("/fonts/gotham/gotham-bold.woff2");
     font-weight: 900;
     font-style: normal;
 }
