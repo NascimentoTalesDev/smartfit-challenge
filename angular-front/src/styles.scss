@@ -2,21 +2,24 @@
     --dark: #000000;
     --dark-grey: #333333;
     --light-grey: #808080;
+    --light: #EDEDED;
+    --white: #FFFFFF;
     --yellow: #FFB612;
     --red: #dc0a17;
     --green: #2FC022;
-
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: "Gotham";
+    overflow-x: hidden;
 }
 
 body{
-    min-height:  120vh;
+    // min-height:  120vh;
     width: 100vw;
 }
 

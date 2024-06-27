@@ -1,0 +1,7 @@
+<button class="button" (click)="submit()" [disabled]="disabled"  [class]="'text ' + variant">
+    @if(!loading){
+        {{ text }}
+    }@else {
+        Carregando...
+    }
+</button>

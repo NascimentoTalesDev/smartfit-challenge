@@ -1,0 +1,58 @@
+<div>
+    <form class="form" [formGroup]="formGroup">
+        <div class="icon">
+            <img src="/images/icon-hour.png" alt="">
+            <span>Horário</span>
+        </div>
+        <div class="period">
+            <h2>Qual período quer treinar?</h2>
+        </div>
+        <div class="times">
+            <hr>
+            <div class="label">
+                <label class="left">
+                    <input type="radio" name="time" id="manha" formControlName="time" >
+                    <span>Manhã</span>
+                </label>
+                <div class="right">
+                    <span>06:00 às 12:00</span>
+                </div>
+            </div>
+            <hr>
+            <div class="label">
+                <label class="left">
+                    <input type="radio" name="time" id="tarde" formControlName="time" >
+                    <span>Tarde</span>
+                </label>
+                <div class="right">
+                    <span>12:01 às 18:00</span>
+                </div>
+            </div>
+            <hr>
+            <div class="label">
+                <label class="left">
+                    <input type="radio" name="time" id="noite" formControlName="time" >
+                    <span>Noite</span>
+                </label>
+                <div class="right">
+                    <span>18:01 às 23:00</span>
+                </div>
+            </div>
+            <hr> 
+        </div>
+        <div class="unidades">
+            <label class="checbox">
+                <input type="checkbox" name="" id="" formControlName="showClosed">
+                <span>Exibir unidades fechadas</span>
+            </label>
+            <div class="results">
+                <span>Resultados encontrados</span>: <span class="res-qtt">{{results.length}}</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <app-button variant="primary" [loading]="false"  (submit)="onSubmit()" text="Encontrar unidade"></app-button>
+            <app-button variant="secondary" [loading]="false" text="Limpar"></app-button>
+        </div>
+    </form>
+</div>
